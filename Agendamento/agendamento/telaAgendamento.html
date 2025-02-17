@@ -58,7 +58,7 @@
 
     input, select, button {
         width: 100%;
-        padding: 0.5rem;
+        padding: 1rem; /* Aumenta a altura dos campos */
         border-radius: 4px;
         border: 1px solid #ccc;
         box-sizing: border-box;
@@ -69,6 +69,8 @@
         color: white;
         border: none;
         cursor: pointer;
+        height: 3rem; /* Mantém a altura do botão */
+        font-size: medium;
     }
 
     button:hover {
@@ -86,13 +88,28 @@
         margin-bottom: 0.5rem;
     }
 
+    .user-options a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-weight: bold;
+    }
+
+    .user-options a:hover {
+        background-color: #f0f0f0;
+    }
+
     </style>
 </head>
 <body>
     <header>
-      <div class="logo">
-        <p>Odonto<span>Hub</span></p>
-    </div>
+        <div class="logo">
+            <a href="index.html"><p>Odonto<span>Hub</span></p></a>
+        </div>
         <div class="user-options">
             <a href="agendamentos.html">Ver Agendamentos</a>
         </div>
